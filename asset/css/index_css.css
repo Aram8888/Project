@@ -1,0 +1,340 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body{
+	padding: 25px;
+}
+header{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-around;
+	border-bottom: 2px orange solid;
+}
+header>div:nth-child(3){
+    display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-between;
+	font-size: 22px;	
+}
+header>div:nth-child(3)>div{
+   padding: 10px;
+}
+header>div:nth-child(3)>div>a>i{
+   	color: black;
+   	 background-color: orange;
+   border-radius: 20px;
+   padding:10px;
+}
+header>div:nth-child(3)>div>a>i:hover{
+   	color: orange;
+   	cursor: pointer;
+   	background-color:black; 
+}
+header>div:nth-child(3)>div:nth-child(2){
+    margin-left: 30px;
+    margin-right: 30px;
+}
+header>div:nth-child(2){
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+header>div:nth-child(1)>p:first-child{
+    padding-bottom: 12px;
+    font-size: 25px;
+}
+nav{
+	text-align: center;
+	border-bottom: 2px orange solid;
+	padding:20px 400px 20px 400px;
+}
+nav>ul{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-between;
+}
+nav>ul>li>a{
+	color: black;
+	padding:20px;
+}
+nav>ul>li:hover{
+	cursor: pointer;
+	background-color: orange;
+	color: black;
+}
+main{
+	padding:20px;
+}
+main>div:first-child{
+	position: relative;
+}
+main>div:first-child>i:first-child{
+	position: absolute;
+	top: 250px;
+	font-size: 40px;
+}
+main>div:first-child>i:last-child{
+	position: absolute;
+	top: 250px;
+	right: 0;
+	font-size: 40px;
+}
+main>div:last-child{
+	margin: 20px;
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-around;
+	text-align: center;
+}
+main>div:last-child>div:nth-child(2){
+	border-left: 2px orange solid;
+	border-right: 2px orange solid;
+	padding: 0 10px;
+}
+section>aside:first-child{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-around;
+}
+section>aside:first-child>div{
+	width: 23%;
+	border: 2px orange solid;
+	padding: 10px;
+	font-size: 25px;
+	position: relative;
+}
+section>aside:first-child>div>div:first-child>img{
+	width: 100%;
+}
+section>aside:first-child>div>div:first-child>img:hover{
+	cursor: pointer;
+}
+section>aside:first-child>div>div:last-child{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-size: 20px;
+}
+section>aside:first-child>div>div:last-child>div:first-child>p{
+	color: red;
+}
+section>aside:first-child>div>div:last-child>div:last-child>button{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+section>aside:first-child>div>div:last-child>div:last-child>button:hover{
+	cursor: pointer;
+	background-color: black;
+	color: orange;
+}
+section>aside:nth-child(2){
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+section>aside:nth-child(2)>div{
+	width: 23%;
+	border: 2px orange solid;
+	padding: 10px;
+	font-size: 25px;
+	position: relative;
+}
+section>aside:nth-child(2)>div>div:first-child>img{
+	width: 100%;
+}
+section>aside:nth-child(2)>div:nth-child(2)>div:first-child>img{
+	width: 100%;
+	margin-bottom: 25px;
+}
+section>aside:nth-child(2)>div>div:first-child>img:hover{
+	cursor: pointer;
+}
+section>aside:nth-child(2)>div>div:last-child{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-size: 20px;
+}
+section>aside:nth-child(2)>div>div:last-child>div:first-child>p{
+	color: red;
+}
+#Italiano{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#Italiano:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+#Sausage{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#Sausage:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+#Assorted{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#Assorted:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+#French{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#French:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+#wok_with_beef{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#wok_with_beef:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+#wok_with_salmon{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#wok_with_salmon:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+#wok_with_chicken{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#wok_with_chicken:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+#wok_with_mushrooms{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#wok_with_mushrooms:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+section>aside:last-child{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-around;
+}
+section>aside:last-child>div{
+	width: 23%;
+	text-align: center;
+	position: relative;
+}
+section>aside:last-child>div>img{
+	width: 100%;
+	height: 98%;
+}
+section>aside:last-child>div>img:hover{
+	cursor: pointer;
+}
+section>aside:last-child>div>h1:hover{
+	color: orange;
+	cursor: pointer;
+}
+article{
+	padding: 40px;
+}
+article>div:first-child{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-around;
+}
+article>div:first-child>div:first-child>img{
+	width: 600px;
+}
+article>div:first-child>div:last-child{
+	padding-top: 100px;
+	font-size:28px;
+}
+article>div:nth-child(2)>div:nth-child(2){
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-around;
+	text-align: center;
+	margin: 20px;
+}
+article>div:nth-child(2)>div:nth-child(2)>div:nth-child(2){
+	margin:0 40px;
+}
+article>div:nth-child(2)>div:nth-child(2)>div>div:first-child>img{
+	border-radius: 50%;
+	width: 150px;
+}
+footer{
+	background-color: orange;
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-around;
+	padding: 30px;
+}
+footer>div:nth-child(2){
+	margin: 0 40px;
+}
+footer>div:last-child{
+	background-color: orange;
+	display: flex;
+	flex-wrap: row nowrap;
+}
+footer>div:last-child>div:nth-child(2){
+	margin: 0 20px;
+}
+footer>div:last-child>div{
+	font-size: 20px;
+}
+footer>div:last-child>div>i{
+	background-color: black;
+	color: orange;
+	padding: 10px;
+	border-radius: 50%;
+}
+footer>div:last-child>div>i:hover{
+	color: black;
+	cursor: pointer;
+	background-color:orange; 
+}
