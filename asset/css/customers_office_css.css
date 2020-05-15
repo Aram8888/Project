@@ -68,20 +68,33 @@ nav>ul>li:hover{
 	color: black;
 }
 main{
-	padding: 20px;
+	text-align: center;
+	margin: 50px;
+	border:2px solid orange;
 }
-main>input{
-	padding: 10px;
-}
-main>button{
-	border:none;
-	background-color: orange;
-	padding: 10px;
-}
-main>button:hover{
-	background-color: black;
+main>form{
 	color: orange;
+}
+main>form>div>input{
+	padding: 10px 20px;
+}
+main>form>button{
+	border: none;
+	padding: 5px;
+	border: 2px solid orange;
+	border-radius: 5px;
+	color: orange;
+	background: none;
+	margin: 20px;
+	font-size: 20px;
+}
+main>form>button:hover{
 	cursor: pointer;
+	background: orange;
+	color: black;
+}
+.error{
+	color: red;
 }
 footer{
 	background-color: orange;

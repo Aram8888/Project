@@ -52,6 +52,7 @@ nav{
 	text-align: center;
 	border-bottom: 2px orange solid;
 	padding:20px 400px 20px 400px;
+	margin-bottom: 20px;
 }
 nav>ul{
 	display: flex;
@@ -67,21 +68,40 @@ nav>ul>li:hover{
 	background-color: orange;
 	color: black;
 }
-main{
-	padding: 20px;
-}
-main>input{
+section>aside>div{
+	width: 23%;
+	border: 2px orange solid;
 	padding: 10px;
+	font-size: 25px;
+	position: relative;
+	margin-top: 20px;
 }
-main>button{
-	border:none;
-	background-color: orange;
-	padding: 10px;
+section>aside>div>div:first-child>img{
+	width: 100%;
 }
-main>button:hover{
-	background-color: black;
-	color: orange;
+section>aside>div>div:first-child>img:hover{
 	cursor: pointer;
+}
+section>aside>div>div:last-child{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-size: 20px;
+}
+section>aside>div>div:last-child>div:first-child>p{
+	color: red;
+}
+#drinks{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#drinks:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
 }
 footer{
 	background-color: orange;
@@ -89,6 +109,7 @@ footer{
 	flex-wrap: row nowrap;
 	justify-content: space-around;
 	padding: 30px;
+	margin-top: 20px;
 }
 footer>div:nth-child(2){
 	margin: 0 40px;

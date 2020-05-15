@@ -1,0 +1,19 @@
+<?php
+session_start();
+if($_POST['action']=='pizza'){
+	header("location:../view/pizza.php");
+	die;
+}
+if($_POST['action']=='wok'){
+	header("location:../view/wok.php");
+	die;
+}
+if($_POST['action']=='drink'){
+	header("location:../view/drinks.php");
+	die;
+}
+if($_POST['action']=='sauces'){
+	header("location:../view/sauces.php");
+	die;
+}
+?>

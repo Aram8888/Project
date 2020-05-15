@@ -232,12 +232,12 @@
 			<div>
 				<img src="asset/images/index_images/large_8a8277fab24557114baf4b32704eb9d4_1_.jpg">
 				<br>
-				<a href="view/thedrinks.php"><h1>The drinks</h1></a>
+				<a href="view/drinks.php"><h1>The drinks</h1></a>
 			</div>
 			<div>
 				<img src="asset/images/index_images/large_sousy_heinz_v_assortimente_1_.png">
 				<br>
-				<a href="view/souces.php"><h1>Sauces</h1></a>
+				<a href="view/sauces.php"><h1>Sauces</h1></a>
 			</div>
 		</aside>
 	</section>
@@ -332,11 +332,22 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</div>
 		<div>
-			<div><i class="fab fa-facebook-f"></i></div>
-			<div><i class="fab fa-twitter-square"></i></div>
-			<div><i class="fab fa-linkedin"></i></div>
+			<div>
+				<a href="https://www.facebook.com/">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</div>
+			<div>
+				<a href="https://twitter.com/explore">
+					<i class="fab fa-twitter-square"></i>
+				</a>
+			</div>
+			<div>
+				<a href="https://www.linkedin.com/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</div>
 		</div>
-		
 	</footer>
 </body>
 </html>

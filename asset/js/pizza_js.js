@@ -1,45 +1,4 @@
 $(function(){
-let arr=['asset/images/index_images/pizza3.png',
-'asset/images/index_images/pizza2_07cc9484943cf52a78273ee2a527ccb3.png',
-'asset/images/index_images/pizza1.png'];
-	$('#slide_left').on('click',function(){
-		console.log('asdasda');
-		if ($(
-			'#slide_img').attr('src')===arr[1]) {
-		$('#slide_img').attr('src',`${arr[0]}`);
-		}
-		else if ($('#slide_img').attr('src')==arr[0]) {
-			$('#slide_img').attr('src',`${arr[2]}`);
-		}
-		else{
-				$('#slide_img').attr('src',`${arr[1]}`);
-		}
-	})
-	$('#slide_right').on('click',function(){
-		console.log('asdasda');
-		if ($(
-			'#slide_img').attr('src')===arr[1]) {
-		$('#slide_img').attr('src',`${arr[2]}`);
-		}
-		else if ($('#slide_img').attr('src')==arr[0]) {
-			$('#slide_img').attr('src',`${arr[1]}`);
-		}
-		else{
-				$('#slide_img').attr('src',`${arr[0]}`);
-		}
-	})
-	setInterval(()=>{
-		if ($(
-			'#slide_img').attr('src')===arr[1]) {
-		$('#slide_img').attr('src',`${arr[2]}`);
-		}
-		else if ($('#slide_img').attr('src')==arr[0]) {
-			$('#slide_img').attr('src',`${arr[1]}`);
-		}
-		else{
-				$('#slide_img').attr('src',`${arr[0]}`);
-		}
-	},2000);
 	$('#Italiano').on('click',()=>{
 	if ($('#Italiano').html().trim()=='Variants') {
 		$('#Italiano_parent').append(`	<section style="width: 260px; position: absolute;bottom: 100px;background-color: white;opacity: 0.9">
@@ -47,7 +6,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			justify-content: space-between;width: 100%;">
 			<div>
 				<label>
-					<input type="radio" name="a" id='a1'>25sm
+					<input type="radio" name="a">25sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -58,7 +17,7 @@ let arr=['asset/images/index_images/pizza3.png',
 	justify-content: space-between;width: 100%;">
 			<div>
 				<label>
-					<input type="radio" name="a" id='a2'>30sm
+					<input type="radio" name="a">30sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -69,7 +28,7 @@ let arr=['asset/images/index_images/pizza3.png',
 	justify-content: space-between;width: 100%;	">
 			<div>
 				<label>
-					<input type="radio" name="a" id='a3'>35sm
+					<input type="radio" name="a">35sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -81,7 +40,7 @@ let arr=['asset/images/index_images/pizza3.png',
 		$('#Italiano').html('Buy');
 		}
 	if ($('#Italiano').html().trim()=='Buy') {
-		$('#Italiano').on('click',()=>{
+			$('#Italiano').on('click',()=>{
 			let radio1=$('#a1');
 			let radio2=$('#a2');
 			let radio3=$('#a3');
@@ -92,7 +51,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=25;
 			let price=500;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -110,7 +69,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=30;
 			let price=550;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -128,7 +87,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=35;
 			let price=600;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -150,7 +109,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			justify-content: space-between;width: 100%;">
 			<div>
 				<label>
-					<input id='a3'  type="radio" name="a">25sm
+					<input type="radio" name="a">25sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -161,7 +120,7 @@ let arr=['asset/images/index_images/pizza3.png',
 	justify-content: space-between;width: 100%;">
 			<div>
 				<label>
-					<input id='a4' type="radio" name="a">30sm
+					<input type="radio" name="a">30sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -172,7 +131,7 @@ let arr=['asset/images/index_images/pizza3.png',
 	justify-content: space-between;width: 100%;	">
 			<div>
 				<label>
-					<input id='a5' type="radio" name="a">35sm
+					<input type="radio" name="a">35sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -194,7 +153,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=25;
 			let price=600;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -212,7 +171,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=30;
 			let price=700;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -230,7 +189,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=35;
 			let price=650;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -252,7 +211,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			justify-content: space-between;width: 100%;">
 			<div>
 				<label>
-					<input id='a7' type="radio" name="a">25sm
+					<input type="radio" name="a">25sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -263,7 +222,7 @@ let arr=['asset/images/index_images/pizza3.png',
 	justify-content: space-between;width: 100%;">
 			<div>
 				<label>
-					<input id='a8' type="radio" name="a">30sm
+					<input type="radio" name="a">30sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -274,7 +233,7 @@ let arr=['asset/images/index_images/pizza3.png',
 	justify-content: space-between;width: 100%;	">
 			<div>
 				<label>
-					<input id='a9' type="radio" name="a">35sm
+					<input type="radio" name="a">35sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -286,7 +245,7 @@ let arr=['asset/images/index_images/pizza3.png',
 		$('#Assorted').html('Buy');
 		}
 	if ($('#Assorted').html().trim()=='Buy') {
-				$('#Assorted').on('click',()=>{
+			$('#Assorted').on('click',()=>{
 			let radio7=$('#a7');
 			let radio8=$('#a8');
 			let radio9=$('#a9');
@@ -296,7 +255,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=25;
 			let price=750;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -314,7 +273,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=30;
 			let price=800;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -332,7 +291,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=35;
 			let price=850;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -354,7 +313,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			justify-content: space-between;width: 100%;">
 			<div>
 				<label>
-					<input id='a10' type="radio" name="a">25sm
+					<input type="radio" name="a">25sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -365,7 +324,7 @@ let arr=['asset/images/index_images/pizza3.png',
 	justify-content: space-between;width: 100%;">
 			<div>
 				<label>
-					<input id='a11' type="radio" name="a">30sm
+					<input type="radio" name="a">30sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -376,7 +335,7 @@ let arr=['asset/images/index_images/pizza3.png',
 	justify-content: space-between;width: 100%;	">
 			<div>
 				<label>
-					<input id='a12' type="radio" name="a">35sm
+					<input type="radio" name="a">35sm
 				</label>
 			</div>
 			<div style="color: red">
@@ -398,7 +357,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=25;
 			let price=600;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -416,7 +375,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=30;
 			let price=700;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -434,7 +393,7 @@ let arr=['asset/images/index_images/pizza3.png',
 			let size=35;
 			let price=650;
 			$.ajax({	
-				url:'....//controllers/index_controller.php',
+				url:'....//controllers/pizza_controller.php',
 				method:'post',
 				dataType:'json',
 				data:{
@@ -449,76 +408,5 @@ let arr=['asset/images/index_images/pizza3.png',
 			})
 		}
 	})
-	$('#wok_with_beef').click(()=>{
-		let img_address='<img src="../asset/images/index_images/large_item_3183489_1.jpg">';
-			let name='Wok with beef';
-			let size=0;
-			let price=200;
-			$.ajax({	
-				url:'....//controllers/index_controller.php',
-				method:'post',
-				dataType:'json',
-				data:{
-					action:'add',
-					img_address:img_address,
-					name:name,
-					size:size,
-					price:price
-					}
-				})
-	})
-	$('#wok_with_salmon').click(()=>{
-		let img_address='<img src="../asset/images/index_images/large_острый-лосось.jpg">';
-			let name='Wok with salmon';
-			let size=0;
-			let price=350;
-			$.ajax({	
-				url:'....//controllers/index_controller.php',
-				method:'post',
-				dataType:'json',
-				data:{
-					action:'add',
-					img_address:img_address,
-					name:name,
-					size:size,
-					price:price
-					}
-				})
-	})
-		$('#wok_with_chicken').click(()=>{
-		let img_address='<img src="../asset/images/index_images/large_item_3183489_1.jpg">';
-			let name='Wok with chicken';
-			let size=0;
-			let price=270;
-			$.ajax({	
-				url:'....//controllers/index_controller.php',
-				method:'post',
-				dataType:'json',
-				data:{
-					action:'add',
-					img_address:img_address,
-					name:name,
-					size:size,
-					price:price
-					}
-				})
-	})
-			$('#wok_with_mushrooms').click(()=>{
-		let img_address='<img src="../asset/images/index_images/large_103_1_big.png">';
-			let name='Wok with mushrooms';
-			let size=0;
-			let price=200;
-			$.ajax({	
-				url:'....//controllers/index_controller.php',
-				method:'post',
-				dataType:'json',
-				data:{
-					action:'add',
-					img_address:img_address,
-					name:name,
-					size:size,
-					price:price
-					}
-				})
-	})
+	
 })

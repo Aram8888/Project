@@ -67,23 +67,45 @@ nav>ul>li:hover{
 	background-color: orange;
 	color: black;
 }
-main{
-	padding: 20px;
+section{
+	margin: 40px;
 }
-main>input{
+section>aside>div{
+	width: 23%;
+	border: 2px orange solid;
 	padding: 10px;
+	font-size: 25px;
+	position: relative;
 }
-main>button{
-	border:none;
-	background-color: orange;
-	padding: 10px;
+section>aside>div>div:first-child>img{
+	width: 100%;
 }
-main>button:hover{
-	background-color: black;
-	color: orange;
+section>aside>div>div:first-child>img:hover{
 	cursor: pointer;
 }
+section>aside>div>div:last-child{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-size: 20px;
+}
+section>aside>div>div:last-child>div:first-child>p{
+	color: red;
+}
+#souces{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#souces:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
 footer{
+	margin-top: 20px;
 	background-color: orange;
 	display: flex;
 	flex-wrap: row nowrap;

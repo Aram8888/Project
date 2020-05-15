@@ -3,10 +3,10 @@
 <head>
 	<title>PizzaWok</title>
 	<meta charset="utf-8">
-	<link rel="icon"  href="asset/images/index_images/download1.jpg">
-	<link rel="stylesheet" type="text/css" href="../asset/css/index_css.css">
+	<link rel="icon"  href="../asset/images/index_images/download1.jpg">
+	<link rel="stylesheet" type="text/css" href="../asset/css/search_css.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="asset/js/index_js.js"></script>
+	<script type="text/javascript" src="../asset/js/search_js.js"></script>
 	<script src="https://kit.fontawesome.com/79955454f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -54,11 +54,9 @@
 		</ul>
 	</nav>
 	<main>
-		<form>
 			<h1>Search</h1>
-			<input type="text" name="">
-			<button>Search</button>
-		</form>
+			<input type="text" name="" class="search_val">
+			<button class="search">Search</button>
 	</main>
 	<footer>
 		<div>
@@ -76,11 +74,22 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</div>
 		<div>
-			<div><i class="fab fa-facebook-f"></i></div>
-			<div><i class="fab fa-twitter-square"></i></div>
-			<div><i class="fab fa-linkedin"></i></div>
+			<div>
+				<a href="https://www.facebook.com/">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+			</div>
+			<div>
+				<a href="https://twitter.com/explore">
+					<i class="fab fa-twitter-square"></i>
+				</a>
+			</div>
+			<div>
+				<a href="https://www.linkedin.com/">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</div>
 		</div>
-		
 	</footer>
 </body>
 </html>

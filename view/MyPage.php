@@ -1,12 +1,15 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>PizzaWok</title>
 	<meta charset="utf-8">
 	<link rel="icon"  href="../asset/images/index_images/download1.jpg">
-	<link rel="stylesheet" type="text/css" href="../asset/css/drinks_css.css">
+	<link rel="stylesheet" type="text/css" href="../asset/css/MyPage_css.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="../asset/js/drinks_js.js"></script>
+	<script type="text/javascript" src="../asset/js/MyPage_js.js"></script>
 	<script src="https://kit.fontawesome.com/79955454f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -53,27 +56,18 @@
 			</li>
 		</ul>
 	</nav>
-	<section>
-			<aside>
-				<div style="position: relative;" id="drinks_parent">
-					<div>
-						<img src="../asset/images/index_images/large_8a8277fab24557114baf4b32704eb9d4_1_.jpg">
-						<br>
-						<p>Coca-cola</p>
-					</div>
-					<div>
-						<div>
-							<p>50rub-100rub</p>
-						</div>
-						<div>
-							<button id="drinks">
-								Variants
-							</button>
-						</div>
-					</div>
-				</div>
-			</aside>
-	</secton>
+	<main>
+		<h1>My Page</h1>
+		<div class="MyPage">
+			Email:
+			<?php if (isset($_SESSION['user'])): ?>
+				<?= $_SESSION['user'] ?>
+			<?php endif ?>
+		</div>
+		<form action="..//controllers/MyPage_controller.php" method="post">
+			<button name="action" value="logout">Logout</button>
+		</form>
+	</main>
 	<footer>
 		<div>
 			<div>
@@ -106,7 +100,6 @@
 				</a>
 			</div>
 		</div>
-		
 	</footer>
 </body>
 </html>

@@ -52,6 +52,7 @@ nav{
 	text-align: center;
 	border-bottom: 2px orange solid;
 	padding:20px 400px 20px 400px;
+	margin-bottom: 20px;
 }
 nav>ul{
 	display: flex;
@@ -67,21 +68,88 @@ nav>ul>li:hover{
 	background-color: orange;
 	color: black;
 }
-main{
-	padding: 20px;
+section>aside:first-child{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-around;
 }
-main>input{
+section>aside:first-child>div{
+	width: 23%;
+	border: 2px orange solid;
 	padding: 10px;
+	font-size: 25px;
+	position: relative;
 }
-main>button{
-	border:none;
+section>aside:first-child>div>div:first-child>img{
+	width: 100%;
+}
+section>aside:first-child>div>div:first-child>img:hover{
+	cursor: pointer;
+}
+section>aside:first-child>div>div:last-child{
+	display: flex;
+	flex-wrap: row nowrap;
+	justify-content: space-between;
+	padding-top: 20px;
+	font-size: 20px;
+}
+section>aside:first-child>div>div:last-child>div:first-child>p{
+	color: red;
+}
+section>aside:first-child>div>div:last-child>div:last-child>button{
+	border: none;
+	font-size: 20px;
+	padding:5px;
 	background-color: orange;
-	padding: 10px;
 }
-main>button:hover{
+section>aside:first-child>div>div:last-child>div:last-child>button:hover{
+	cursor: pointer;
 	background-color: black;
 	color: orange;
-	cursor: pointer;
+}
+#Italiano{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#Italiano:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+#Sausage{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#Sausage:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+#Assorted{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#Assorted:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
+}
+#French{
+	border: none;
+	font-size: 20px;
+	padding:5px;
+	background-color: orange;
+}
+#French:hover{
+cursor: pointer;
+	background-color: black;
+	color: orange;	
 }
 footer{
 	background-color: orange;
@@ -89,6 +157,7 @@ footer{
 	flex-wrap: row nowrap;
 	justify-content: space-around;
 	padding: 30px;
+	margin-top: 20px;
 }
 footer>div:nth-child(2){
 	margin: 0 40px;
